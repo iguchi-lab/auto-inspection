@@ -36,7 +36,7 @@ for i, id in enumerate(DEVICE_ID):
         print('Capture ID = ' + str(id))
         cap = cv2.VideoCapture(id)
         ret, frame = cap.read()
-        filename = datetime_str + '-' + str(i) + '.jpg'
+        filename = datetime_str + '-' + str(i + 3) + '.jpg'
     
         cv2.imwrite(filepath + filename, frame)
         time.sleep(5)
