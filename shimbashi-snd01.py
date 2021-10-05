@@ -10,7 +10,7 @@ import urllib.request
 bucket_name = "shimbashi-sound-in"
 s3 = boto3.resource('s3')
 
-DEVICE_ID = [0, 1]
+DEVICE_ID = [0, 1, 2]
 
 def post_slack(message):
     send_data ={
